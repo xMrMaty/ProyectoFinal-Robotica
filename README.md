@@ -126,18 +126,27 @@ Escenario Complejo | [Ver en YouTube](https://youtu.be/TgcAKviKTiY)
 
 ## 8. Instrucciones de Ejecución
 
-1. Instalar [Webots](https://cyberbotics.com/) (versión R2023b o superior)
-2. Clonar este repositorio
-3. Abrir `worlds/escenario_complejo.wbt` en Webots
-4. Verificar que el campo `controller` del nodo E-puck esté asignado a `ControladorFinal`
-5. Presionar el botón **Reset** (`|◀◀`) para ubicar el robot en la posición inicial
-6. Presionar **Play** (`▶`) para iniciar la simulación
-7. Al finalizar, se generará automáticamente el archivo `datos_ruta.csv` en la carpeta del controlador
-8. Para generar el gráfico comparativo, ejecutar desde terminal:
-```bash
-   pip install matplotlib
-   python graficar.py
-```
+### Requisitos previos
+- Instalar [Webots](https://cyberbotics.com/) (versión R2023b o superior)
+- Clonar este repositorio
+
+### Escenario Simple
+
+1. Abrir `worlds/escenario_simple.wbt` en Webots
+2. Verificar que el campo `controller` del nodo E-puck esté asignado a `ControladorSimple`
+3. Verificar que el bloque rojo de meta tenga `emissiveColor: 1 0 0` en su `PBRAppearance`
+4. Presionar **Reset** (`|◀◀`) para ubicar el robot en la posición inicial
+5. Presionar **Play** (`▶`) para iniciar la simulación
+6. El robot navegará sorteando los obstáculos verdes y se detendrá al detectar el bloque rojo
+
+### Escenario Complejo
+
+1. Abrir `worlds/escenario_complejo.wbt` en Webots
+2. Verificar que el campo `controller` del nodo E-puck esté asignado a `ControladorComplejo`
+3. Verificar que el bloque rojo de meta tenga `emissiveColor: 1 0 0` en su `PBRAppearance`
+4. Presionar **Reset** (`|◀◀`) para ubicar el robot en la posición inicial
+5. Presionar **Play** (`▶`) para iniciar la simulación
+6. Al finalizar, se generará automáticamente el archivo `datos_ruta.csv` en la carpeta del controlador
 
 ---
 
