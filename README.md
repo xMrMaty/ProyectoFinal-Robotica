@@ -1,9 +1,9 @@
 # Proyecto Final: Navegación Autónoma con Planificación de Rutas (A*)
 
 **Integrantes:**
-- Matías Ruiz Flores
-- Joaquín Castro Delgado
-- Álvaro Del Pino Cerda
+- Matías Ruiz Flores: Desarrollador Principal — Implementación del algoritmo A*, control cinemático, odometría y depuración del controlador 
+- Joaquín Castro Delgado: Diseñador de Entornos — Construcción de los escenarios en Webots, configuración de obstáculos y calibración del mapa físico 
+- Álvaro Del Pino Cerda: Analista y Documentador — Generación de métricas, gráficos comparativos de trayectoria y redacción del informe técnico 
 
 **Línea seleccionada:** Línea A — Planificación de rutas con algoritmo A*
 
@@ -119,6 +119,9 @@ El gráfico a continuación fue generado a partir del archivo `datos_ruta.csv` e
 
 Las desviaciones observadas en la zona inicial se explican por la activación del estado de evasión reactiva al detectar proximidad con las paredes perimetrales, generando un error odométrico momentáneo que el sistema logra compensar retomando la ruta planificada.
 
+Videos de Ejecución
+Escenario Simple | [Ver en YouTube](https://youtu.be/hDq2pcBzYiM)
+Escenario Complejo | [Ver en YouTube](https://youtu.be/TgcAKviKTiY)
 ---
 
 ## 8. Instrucciones de Ejecución
